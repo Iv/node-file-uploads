@@ -8,6 +8,13 @@ router.get('/', function(req, res) {
     res.render('index', { title: 'Node.js File Uploads' });
 });
 
+
+
+
+
+
+
+
 router.post('/', function(req, res, next) {
     // create a form to begin parsing
     var form = new multiparty.Form();
