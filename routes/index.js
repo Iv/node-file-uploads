@@ -39,7 +39,8 @@ router.post('/', function(req, res, next) {
     form.on('part', function(part) {
         uploadFile.size = part.byteCount;
         uploadFile.type = part.headers['content-type'];
-        uploadFile.path = './files/' + part.filename;
+        uploadFile.path = '/app/files /
+' + part.filename;
 
         if(uploadFile.size > maxSize) {
             errors.push('File size is ' + uploadFile.size / 1024 / 1024 + '. Limit is' + (maxSize / 1024 / 1024) + 'MB.');
